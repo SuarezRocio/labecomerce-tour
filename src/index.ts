@@ -309,7 +309,7 @@ app.delete("/users/:id", async (req: Request, res: Response) => {
     }
     await db("users").delete().where({ id: idToDelete })
 
-    res.status(201).send("user  com sucesso")
+    res.status(201).send("user deleteado com sucesso")
   } catch (error) {
     console.log(error)
 
