@@ -9,43 +9,43 @@ export const productos: Tproductos[] = [
     {   id:"1",
         name:"milho", 
         preco: 15,
-        categoria: ROLE.ALIMENTOS,
+        categoria: ROLE.TRIPSTOUR,
  },
     {
         name:"cebola",
         id:"2",
         preco: 15,
-        categoria: ROLE.ALIMENTOS
+        categoria: ROLE.TRIPSTOUR
     },
     {
         name:"alho" ,
         id:"3",
         preco: 15,
-        categoria: ROLE.ALIMENTOS
+        categoria: ROLE.TRIPSTOUR
      },
     {
         name:"salsa" ,
         id:"4",
         preco: 15,
-        categoria: ROLE.ALIMENTOS
+        categoria: ROLE.TRIPSTOUR
     },
     {
         name:"tomate" ,
         id:"5",
         preco: 15,
-        categoria: ROLE.ALIMENTOS    
+        categoria: ROLE.TRIPSTOUR    
     },
     {
         name:"óleo" ,
         id:"5",
         preco: 15,
-        categoria: ROLE.ALIMENTOS    
+        categoria: ROLE.TRIPSTOUR    
     },
     {
         name:"carne" ,
         id:"6",
         preco: 15,
-        categoria: ROLE.ALIMENTOS    
+        categoria: ROLE.TRIPSTOUR    
     }
     ]
 
@@ -54,37 +54,37 @@ export const users: Tuser[] = [
     {
     name: "maria",
     id: "1", 
-    email: "pepe@gmail.com" ,
+    email: "maria@gmail.com" ,
     password: "5465465",
     type: ACCOUNT_TYPE.GOLD
 },
 {   name: "diogo", 
     id: "2", 
-    email: "pepe@gmail.com" ,
+    email: "diogo@gmail.com" ,
     password: "5465465",
     type: ACCOUNT_TYPE.PLATINUM
 },
 {   name: "roberta",
     id: "3", 
-    email: "pepe@gmail.com" ,
+    email: "roberta@gmail.com" ,
     password: "5465465",
     type: ACCOUNT_TYPE.GOLD
 },
 {   name: "miranda",
     id: "4", 
-    email: "pepe@gmail.com" ,
+    email: "miranda@gmail.com" ,
     password: "5465465",
     type: ACCOUNT_TYPE.BLACK
 },
-{   name: "marcela",
+{   name: "mariana",
     id: "5", 
-    email: "pepe@gmail.com" ,
+    email: "mariana@gmail.com" ,
     password: "5465465",
     type: ACCOUNT_TYPE.BLACK
 },
 {   name: "martina", 
     id: "6", 
-    email: "pepe@gmail.com" ,
+    email: "martina@gmail.com" ,
     password: "5465465",
     type: ACCOUNT_TYPE.PLATINUM
 }
@@ -149,8 +149,4 @@ console.log(queryProductosById)
 const getAllPurchasesFromIdUser = (id: string): Tpurchase[] => {
     return purchase.filter((purchase) => purchase.userId == id);
   };
-
-
-
-    
       

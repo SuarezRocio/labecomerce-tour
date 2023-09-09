@@ -20,7 +20,7 @@ export enum ACCOUNT_TYPE {
 }
 
 export enum ROLE {
-    ALIMENTOS = "alimentos"
+    TRIPSTOUR = "trips-tour"
     }
 
 export type Tpurchase = {
