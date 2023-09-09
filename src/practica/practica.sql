@@ -1,4 +1,4 @@
--- Active: 1681156152776@@127.0.0.1@3306
+-- Active: 1694226536996@@127.0.0.1@3306
 CREATE TABLE users(
 id TEXT PRIMARY KEY UNIQUE NOT NULL, 
 name TEXT NOT NULL,
@@ -12,7 +12,7 @@ DROP TABLE users;
 SELECT * FROM users;
 
 INSERT INTO users(id , name, email, password, type )
-VALUES ("u001",  "Raquel de Solange", "solange@gmail.com", "2DFSAFAS08", "BLACK");
+VALUES ("u001",  "Mariana del Sol", "solange@gmail.com", "2DFSAFAS08", "BLACK");
 
 SELECT * FROM users;
 
@@ -39,24 +39,12 @@ SELECT * FROM productos;
 
 INSERT INTO productos(id , name, categoria, preco, img, descripcao)
 VALUES 
-("prod001",  "hopi hari","trips-tour" , 700R , "https://ibb.co/fMyjxDV", "O Parque Hopi Hari é uma cópia dos parques temáticos normalmente encontrados na Flórida.
+("prod001",  "hopi hari","trips-tour" , 700 , "https://ibb.co/fMyjxDV", "O Parque Hopi Hari é uma cópia dos parques temáticos normalmente encontrados na Flórida.
 Possui atrações para todas as idades, montanhas-russas, realidade virtual e passeios como corredeiras e hotel de terror."),
-("prod006",  "kidzania","trips-tour" , 400R ,"https://ibb.co/mq3ZCTr", "Na KidZania as marcas parceiras agregam realismo à cidade através de uma oportunidade inovadora de marketing experiencial. Aqui, as crianças de 4 a 14 anos podem brincar e aprender, com o conceito único de “EDUtenimento”"),
-("prod008",  "late clube piraju","trips-tour" , 650R ,"https://ibb.co/yppkJ2j", "Com o tempo, as ações para desenvolver as áreas social e esportiva do clube ganharam bom ritmo, com a construção de quadras poliesportivas, quadras de tênis, salas de jogos, salão de festas com mezanino, playground, sauna etc."),
-("prod0010",  "looping park","trips-tour" , 500R ,"https://ibb.co/J5CYP3c", "Looping Park, local da maior montanha-russa itinerante da América do Sul! E uma casa de outros passeios incríveis"),
-("prod0011",  "mercado municipal","trips-tour" , 750R ,"https://ibb.co/74yznZf", "O prédio, que ocupa um espaço de 12,6 mil metros quadrados de área construída às margens do Rio Tamanduateí, abriga mais de 1,5 mil funcionários que, juntos, movimentam cerca de 350 toneladas de alimentos por dia"),
-("prod0012",  "therma do vale","trips-tour" , 600R ,"https://ibb.co/xGbdq5x", "O Thermas do Vale fica pertinho da capital São Paulo e é o lugar perfeito pra você curtir um dia de lazer. O lindo Parque Aquático conta com 13 piscinas e diversas atrações em um espaço repleto de natureza preservada. As piscinas funcionam em temperatura ambiente"),
-("prod0013",  "tour dia completo","trips-tour" , 1000R ,"https://ibb.co/cC5knbG", "Florianópolis possui 52% do seu território como área de preservação ambiental, além das 43 praias, o que configura um cenário natural único. São 46 pontos históricos, entre fortalezas, museus e igrejas. Floripa também possui uma riqueza gastronômica de fazer salivar. São quatro vias gastronômicas, que oferecem desde a culinária típica com base nos frutos do mar até a altíssima gastronomia");
-
-
-/*https://ibb.co/fMyjxDV
-https://ibb.co/mq3ZCTr
-https://ibb.co/yppkJ2j
-https://ibb.co/J5CYP3c
-/*--------------------*
-https://ibb.co/74yznZf
-https://ibb.co/xGbdq5x
-https://ibb.co/cC5knbG*/
+("prod006",  "kidzania","trips-tour" , 400 ,"https://ibb.co/mq3ZCTr", "Na KidZania as marcas parceiras agregam realismo à cidade através de uma oportunidade inovadora de marketing experiencial. Aqui, as crianças de 4 a 14 anos podem brincar e aprender, com o conceito único de “EDUtenimento”"),
+("prod008",  "late clube piraju","trips-tour" , 650 ,"https://ibb.co/yppkJ2j", "Com o tempo, as ações para desenvolver as áreas social e esportiva do clube ganharam bom ritmo, com a construção de quadras poliesportivas, quadras de tênis, salas de jogos, salão de festas com mezanino, playground, sauna etc."),
+("prod0010",  "looping park","trips-tour" , 500 ,"https://ibb.co/J5CYP3c", "Looping Park, local da maior montanha-russa itinerante da América do Sul! E uma casa de outros passeios incríveis"),
+("prod0011",  "mercado municipal","trips-tour" , 750 ,"https://ibb.co/74yznZf", "O prédio, que ocupa um espaço de 12,6 mil metros quadrados de área construída às margens do Rio Tamanduateí, abriga mais de 1,5 mil funcionários que, juntos, movimentam cerca de 350 toneladas de alimentos por dia");
 
 
 UPDATE productos
@@ -78,21 +66,20 @@ SELECT * FROM productos;
 
 INSERT INTO users(id, name, email, password, type)
 VALUES
-("u002",  "Ramona de Solange", "solange@gmail.com","2DFSAFAS08", "OURO");
+("u002",  "Mariana Esposito", "mariana@gmail.com","2DFSAFAS08", "OURO");
 
 
 INSERT INTO productos (id , name, categoria, preco, img , descripcao)
 VALUES
-("prod002",  "tomate","alimento" , 10 ,"https://ibb.co/2Yg3pJ6", "descripcao"),
-("prod003",  "manga","alimento" , 6 ,"https://ibb.co/j60XDHt", "descripcao");
-
+("prod002",  "therma do vale","trips-tour" , 600 ,"https://ibb.co/xGbdq5x", "O Thermas do Vale fica pertinho da capital São Paulo e é o lugar perfeito pra você curtir um dia de lazer. O lindo Parque Aquático conta com 13 piscinas e diversas atrações em um espaço repleto de natureza preservada. As piscinas funcionam em temperatura ambiente"),
+("prod003",  "tour dia completo","trips-tour" , 1000 ,"https://ibb.co/cC5knbG", "Florianópolis possui 52% do seu território como área de preservação ambiental, além das 43 praias, o que configura um cenário natural único. São 46 pontos históricos, entre fortalezas, museus e igrejas. Floripa também possui uma riqueza gastronômica de fazer salivar. São quatro vias gastronômicas, que oferecem desde a culinária típica com base nos frutos do mar até a altíssima gastronomia");
 
 DROP TABLE productos;
 
 
 SELECT * FROM users
-INNER JOIN productos 
-ON productos.productos.id = users.id;
+INNER JOIN purchase
+ON buyer_id = users.id;
 
 
 CREATE TABLE purchase (
@@ -112,10 +99,11 @@ DROP TABLE purchase;
 
 
 INSERT INTO users (id, name, email, password, type)
-VALUES("u007", "ricardo", "ricardo@gmail.com", "ricardo120",  "PLATINO"),
-("u008", "mariana", "mariana@gmail.com", "mariana120", "OURO"),
-("u009", "karen", "karen@gmail.com", "karen120", "BLACK"),
-( "u0010", "lurdes", "lurdes@gmail.com", "lurdes123", "PLATINO");
+VALUES("u007", "roberta", "roberta@gmail.com", "roberta120",  "PLATINO"),
+("u008", "sofia", "sofia@gmail.com", "sofia120", "OURO"),
+("u009", "ana", "ana@gmail.com", "ana120", "BLACK"),
+( "u0010", "lurdes", "lurdes@gmail.com", "lurdes123", "PLATINO"),
+( "u0011", "martina", "martina@gmail.com", "martina123", "OURO");
 
 SELECT * FROM users;
 
@@ -127,15 +115,15 @@ SET password = "lurdes123"
 WHERE id = "u0010" ;
 
 
-
 INSERT INTO purchase (id, productId, quantity, totalPrice, buyer_id)
 VALUES
-("pur001", "prod001" , 4 , 10 , "u001"),
-("pur002", "prod002" , 4 , 10 , "u002"),
-("pur007", "prod003" , 7 , 20 , "u007"),
-("pur008", "prod006" , 4 , 30 , "u008"),
-("pur009", "prod008" , 8 , 40 , "u009"),
-("pur0010","prod0010", 7 , 20 , "u0010");
+("pur001", "prod001" , 5 , 3500 , "u001"),
+("pur002", "prod002" , 2 , 1200 , "u002"),
+("pur007", "prod003" , 4 , 4000 , "u007"),
+("pur008", "prod006" , 4 , 1600 , "u008"),
+("pur009", "prod008" , 7 , 4550 , "u009"),
+("pur0010","prod0010", 2 , 1000 , "u0010"),
+("pur0011","prod0011", 1 , 750 , "u0011");
 
 DROP TABLE purchase;
 
@@ -179,15 +167,10 @@ VALUES
 ("pur007", "prod003"),
 ("pur008", "prod006"),
 ("pur009", "prod008"),
-("pur0010","prod0010");
+("pur0010","prod0010"),
+("pur0011","prod0011");
 
  
-
-/*UPDATE purchase 
-SET preco = 17
-WHERE id = "pur0010";*/
-
-
 SELECT * FROM purchase_purchaser_producto;
 
 SELECT * FROM productos
