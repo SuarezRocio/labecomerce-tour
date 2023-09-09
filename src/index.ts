@@ -374,6 +374,12 @@ app.put("/users/:id", async (req: Request, res: Response) => {
         throw new Error("type deve ser um tipo valido")
       }
     }
+    /*
+    if (newType !== undefined && ![ACCOUNT_TYPE.GOLD, ACCOUNT_TYPE.PLATINUM, ACCOUNT_TYPE.BLACK].includes(newType)) {
+      res.status(400);
+      throw new Error("type debe ser un tipo válido");
+    }*/
+    
 
     /*if (newType !== CATEGORY.NORMAL) {
       if (newType !== CATEGORY.ADMIN &&
@@ -409,6 +415,72 @@ app.put("/users/:id", async (req: Request, res: Response) => {
     res.send(error.message)
   }
 })
+/*
+app.put("/users/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const { name, email, password, id: newId, type } = req.body;
+
+    // Validar campos
+    if (email !== undefined && typeof email !== "string") {
+      return res.status(400).send("El email debe ser una cadena.");
+    }
+
+    if (password !== undefined && typeof password !== "string") {
+      return res.status(400).send("La contraseña debe ser una cadena.");
+    }
+
+    if (name !== undefined && typeof name !== "string") {
+      return res.status(400).send("El nombre debe ser una cadena.");
+    }
+
+    if (newId !== undefined && typeof newId !== "string") {
+      return res.status(400).send("El nuevo ID debe ser una cadena.");
+    }
+
+    if (
+      type !== undefined &&
+      ![ACCOUNT_TYPE.GOLD, ACCOUNT_TYPE.PLATINUM, ACCOUNT_TYPE.BLACK].includes(type)
+    ) {
+      return res.status(400).send("El tipo debe ser un valor válido.");
+    }
+
+    // Consultar y actualizar el usuario en la base de datos
+    const [accountToEdit] = await db("users").where({ id });
+
+    if (!accountToEdit) {
+      return res.status(404).send("Usuario no encontrado.");
+    }
+
+    if (name !== undefined) {
+      accountToEdit.name = name;
+    }
+
+    if (newId !== undefined) {
+      accountToEdit.id = newId;
+    }
+
+    if (email !== undefined) {
+      accountToEdit.email = email;
+    }
+
+    if (password !== undefined) {
+      accountToEdit.password = password;
+    }
+
+    if (type !== undefined) {
+      accountToEdit.type = type;
+    }
+
+    await db("users").update(accountToEdit).where({ id });
+
+    return res.status(200).send("Usuario actualizado con éxito.");
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Error inesperado.");
+  }
+});*/
+
 
 app.put("/productos/:id", async (req: Request, res: Response) => {
   try {
