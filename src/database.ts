@@ -7,44 +7,44 @@ import {ACCOUNT_TYPE} from "./types"
 
 export const productos: Tproductos[] = [
     {   id:"1",
-        name:"milho", 
-        preco: 15,
+        name:"hopi hari", 
+        preco: 700,
         categoria: ROLE.TRIPSTOUR,
  },
     {
-        name:"cebola",
-        id:"2",
-        preco: 15,
+        name:"kidzania",
+        id:"6",
+        preco: 400,
         categoria: ROLE.TRIPSTOUR
     },
     {
-        name:"alho" ,
-        id:"3",
-        preco: 15,
+        name:"late clube piraju",
+        id:"8",
+        preco: 650,
         categoria: ROLE.TRIPSTOUR
      },
     {
-        name:"salsa" ,
-        id:"4",
-        preco: 15,
+        name:"looping park" ,
+        id:"10",
+        preco: 500,
         categoria: ROLE.TRIPSTOUR
     },
     {
-        name:"tomate" ,
-        id:"5",
-        preco: 15,
+        name:"mercado municipal" ,
+        id:"11",
+        preco: 750,
         categoria: ROLE.TRIPSTOUR    
     },
     {
-        name:"óleo" ,
-        id:"5",
-        preco: 15,
+        name:"therma do vale" ,
+        id:"12",
+        preco: 600,
         categoria: ROLE.TRIPSTOUR    
     },
     {
-        name:"carne" ,
-        id:"6",
-        preco: 15,
+        name:"tour dia completo" ,
+        id:"13",
+        preco: 1000,
         categoria: ROLE.TRIPSTOUR    
     }
     ]
